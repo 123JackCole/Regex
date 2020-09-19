@@ -1,5 +1,4 @@
-let regex1;
-let regex2;
-let regex3;
+let regex1 = new RegExp('x+yz');
 
+let regex2 = '/x+zy/';
 
