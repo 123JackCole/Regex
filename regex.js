@@ -15,3 +15,6 @@ string.match(/test/); // ["test"]
 string.match(/[test]/); // ["t"]
 string.match(/[a-f]/); // ["e"]
 
+string.match(/love/g); // ["love", "love"]
+string.match(/I/i); // ["i"]
+
