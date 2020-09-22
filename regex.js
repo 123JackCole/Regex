@@ -18,3 +18,11 @@ string.match(/[a-f]/); // ["e"]
 string.match(/love/g); // ["love", "love"]
 string.match(/I/i); // ["i"]
 
+string = '1 r e g e x 2'
+
+string.match(/./); // ["1"]
+string.match(); // [""]
+string.match(); // []
+string.match(); // []
+string.match(); // []
+string.match(); // []
