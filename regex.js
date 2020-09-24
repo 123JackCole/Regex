@@ -22,7 +22,7 @@ string = '1 r e g e x 2'
 
 string.match(/./); // ["1"]
 string.match(/^1/); // ["1"]
-string.match(/$2/); // ["2"]
+string.match(/2$/); // ["2"]
 string.match(/[0-9]^/); // ["1"]
-string.match(); // []
+string.match(/^[0-9][a-z]/i); // ["1r"]
 string.match(); // []
