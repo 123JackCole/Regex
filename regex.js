@@ -20,12 +20,25 @@ string.match(/I/i); // ["i"]
 
 string = '1reg ex2'
 
-
 string.match(/./); // ["1"]
+string.match(/\S/g); // ["1regex2"]
+string.match(/\d\D\S\S\s.../); // ["1reg ex2"]
+
+
 string.match(/^1/); // ["1"]
 string.match(/2$/); // ["2"]
 string.match(/[0-9]^/); // ["1"]
 string.match(/^[0-9][a-z]/i); // ["1r"]
 string.match(/^[0-9].[a-z]./i); // ["1reg"]
-string.match(/\D\d\s\s\S/); // ["1reg"]
-string.match(/\s/g);
+
+
+string.match(/^[^a-z]/); // ["1"]
+string.match(/[^0-9]/g); // ["reg ex"]
+
+
+string.match(//); // []
+string.match(//); // []
+string.match(//); // []
+string.match(//); // []
+string.match(//); // []
+string.match(//); // []
