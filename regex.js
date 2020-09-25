@@ -18,11 +18,14 @@ string.match(/[a-f]/); // ["e"]
 string.match(/love/g); // ["love", "love"]
 string.match(/I/i); // ["i"]
 
-string = '1 r e g e x 2'
+string = '1reg ex2'
+
 
 string.match(/./); // ["1"]
 string.match(/^1/); // ["1"]
 string.match(/2$/); // ["2"]
 string.match(/[0-9]^/); // ["1"]
 string.match(/^[0-9][a-z]/i); // ["1r"]
-string.match(); // []
+string.match(/^[0-9].[a-z]./i); // ["1reg"]
+string.match(/\D\d\s\s\S/); // ["1reg"]
+string.match(/\s/g);
