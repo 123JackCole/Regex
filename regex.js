@@ -35,10 +35,13 @@ string.match(/^[0-9].[a-z]./i); // ["1reg"]
 string.match(/^[^a-z]/); // ["1"]
 string.match(/[^0-9]/g); // ["reg ex"]
 
+string = "1regex2regexredregexblueregex"
 
-string.match(//); // []
-string.match(//); // []
-string.match(//); // []
-string.match(//); // []
-string.match(//); // []
-string.match(//); // []
+string.match(/[0-9]?/g); // ["12"]
+string.match(/[a-z]*2/); // ["regex2"]
+string.match(/ex+/); // ["ex"]
+string.match(/[a-z]{4}/); // ["rege"]
+string.match(/[gex]*[re]+c?/); // ["xre"]
+
+
+string.match(//); // [""]
