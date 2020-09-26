@@ -44,4 +44,6 @@ string.match(/[a-z]{4}/); // ["rege"]
 string.match(/[gex]*[re]+c?/); // ["xre"]
 
 
-string.match(//); // [""]
+string = "re{g{e}x"
+
+string.match(/\{/g); // ["{{"]
